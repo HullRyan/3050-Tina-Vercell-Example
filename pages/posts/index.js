@@ -32,7 +32,7 @@ export default function Home(props) {
           <div key={post.node.id}>
             <Link href={`/posts/${post.node.sys.filename}`}>
               <a>{post.node.sys.filename}
-              {console.log(post.values.title)}</a>
+              {console.log(post.node.values.title)}</a>
             </Link>
           </div>
         ))}
