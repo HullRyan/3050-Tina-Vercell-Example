@@ -31,8 +31,8 @@ export default function Home(props) {
         {postsList.map((post) => (
           <div key={post.node.id}>
             <Link href={`/posts/${post.node.sys.filename}`}>
-              <a>{post.node.sys.filename}
-              {console.node.values.title}</a>
+              <a>{post.node.values.title}
+              </a>
             </Link>
           </div>
         ))}
