@@ -11,6 +11,9 @@ const query = `{
         sys {
           filename
         }
+        values {
+          title
+        }
       }
     }
   }
