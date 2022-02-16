@@ -24,6 +24,10 @@ export default function Home(props) {
     data: props.data,
   });
   const postsList = data.getPostList.edges;
+
+  postsList.map((post) => (
+    console.log(post);
+  ))
   return (
     <Layout>
       <h1>Posts</h1>
@@ -31,8 +35,7 @@ export default function Home(props) {
         {postsList.map((post) => (
           <div key={post.node.id}>
             <Link href={`/posts/${post.node.sys.filename}`}>
-              <a>{post.node.values.title}
-              </a>
+              <a>{post.node.sys.filename}</a>
             </Link>
           </div>
         ))}
