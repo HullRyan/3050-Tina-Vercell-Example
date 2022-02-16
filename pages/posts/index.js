@@ -26,7 +26,7 @@ export default function Home(props) {
   const postsList = data.getPostList.edges;
 
   postsList.map((post) => (
-    console.log(post);
+    console.log(post)
   ))
   return (
     <Layout>
